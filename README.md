@@ -13,5 +13,17 @@ Python scripts using selenium to automate your instagram activity.
 - Download this file: [get-pip.py](https://bootstrap.pypa.io/get-pip.py)
 - Then open up `CLI` in the folder where you saved `get-pip.py`.
 - Type `python get-pip.py` and hit enter.
+- If that doesn't work, do `python3 get-pip.py`
 - The above method works for all systems.
-- Alternatively, Linux users can use their package manager to download `pip`.
+- Alternatively, Linux users can use their package manager to install `pip`.
+
+# Install Selenium
+- Selenium is a `python` library used to automate web browsers.
+- We'll use `Google Chrome`. If you can't get `Chrome`, use `Chromium`.
+- Open `CLI` and run `pip install selenium`.
+- That's done.
+
+# Get chrome drivers
+- Download for your `OS` and your `Chrome version`.
+- Official site for download: [chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads).
+- 
