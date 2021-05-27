@@ -72,9 +72,9 @@ def unfollow ():
 # Driver code
 textfile = NULL
 try:
-    textfile = open (username + "/unfollow.list", "r")
+    textfile = open ("data/unfollow.list", "r")
 except:
-    print ("Could not locate file: " + username + "/unfollow.list")
+    print ("Could not locate file: " + "data/unfollow.list")
     exit ()
 namelist = textfile.readlines ()
 textfile.close ()
