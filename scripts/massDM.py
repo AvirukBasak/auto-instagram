@@ -53,18 +53,20 @@ def login (username, your_password):
     print ("Logged in")
 
 def send_message(msg):
-   
-    # Find message button
-    message = chrome.find_element_by_class_name ('_862NM ') 
-    message.click ()
-    time.sleep (2)
-    chrome.find_element_by_class_name ('HoLwm ').click()
-    time.sleep (1)
+    try:
+        # Find message button
+        message = chrome.find_element_by_class_name ('_862NM ') 
+        message.click ()
+        time.sleep (2)
+        chrome.find_element_by_class_name ('HoLwm ').click()
+        time.sleep (1)
     
-    mbox = chrome.find_element_by_tag_name('textarea')
-    mbox.send_keys(msg)
-    mbox.send_keys(Keys.RETURN)
-    time.sleep(1.2)
+        mbox = chrome.find_element_by_tag_name('textarea')
+        mbox.send_keys(msg)
+        mbox.send_keys(Keys.RETURN)
+        time.sleep(1.2)
+    except selenium.common.exceptions.NoSuchElementException:
+        pass
         
 # Driver code
 textfile = NULL
