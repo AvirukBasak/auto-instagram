@@ -1,0 +1,5 @@
+false
+Put your DM in this file. If you want to attach an
+image, put the link to that in this file as well.
+Certain emojis are unsupported, so if you get an error,
+remove them.
