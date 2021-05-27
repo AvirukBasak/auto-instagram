@@ -79,7 +79,7 @@ msg = textfile.readlines ()
 textfile.close ()
 
 # check for msg
-if msg[0:5] == "false":
+if msg[0:5] == "FALSE":
     print ("ERROR: please overwrite content of data/dmtext.txt with\n
                    the message you wish to send.");
     exit (1);
