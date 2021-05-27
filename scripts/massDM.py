@@ -71,11 +71,20 @@ def send_message(msg):
 # Driver code
 textfile = NULL
 try:
-    textfile = open ("data/dmtext", "r")
+    textfile = open ("data/dmtext.txt", "r")
 except:
-    print ("Could not locate file: " + "data/dmtext")
+    print ("Could not locate file: " + "data/dmtext.txt")
     exit ()
 msg = textfile.readlines ()
+textfile.close ()
+
+textfile = NULL
+try:
+    textfile = open ("data/namelist.txt", "r")
+except:
+    print ("Could not locate file: " + "data/namelist.txt")
+    exit ()
+namelist = textfile.readlines ()
 textfile.close ()
 line = 1
 
