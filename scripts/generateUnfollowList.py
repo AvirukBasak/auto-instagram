@@ -1,5 +1,5 @@
 # Login credentials
-username = open ("user.txt", "r").readline ();
+username = open ("credentials.txt", "r").readline ();
 
 # open following file, make a followings list
 Ffollowing = NULL
