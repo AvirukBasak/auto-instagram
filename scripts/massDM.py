@@ -78,6 +78,12 @@ except:
 msg = textfile.readlines ()
 textfile.close ()
 
+# check for msg
+if msg[0:5] == "false":
+    print ("Please overwrite content of data/dmtext.txt with\n
+            the message you wish to send.");
+    exit (1);
+
 textfile = NULL
 try:
     textfile = open ("data/namelist.txt", "r")
