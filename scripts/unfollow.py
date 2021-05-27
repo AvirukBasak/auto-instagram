@@ -17,7 +17,7 @@ def path ():
         option.add_argument ("window-size=1024x700")
         try:
             # Add path to chrome driver executable file if required
-            chrome = webdriver.Chrome ("chromedriver.exe", options=option)
+            chrome = webdriver.Chrome ("data/chromedriver.exe", options=option)
         except:
             print ("Could not locate Chrome Driver")
             exit ();
