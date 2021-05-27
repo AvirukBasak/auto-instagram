@@ -4,9 +4,9 @@ username = open ("user.txt", "r").readline ();
 # open following file, make a followings list
 Ffollowing = NULL
 try:
-    Ffollowing = open (username + "/following.list", "r")
+    Ffollowing = open ("data/following.list", "r")
 except:
-    print ("Could not locate file: " + username + "/following.list")
+    print ("Could not locate file: " + "data/following.list")
     exit ()
 # Read data from file into a list
 followings = Ffollowing.readlines ()
@@ -15,9 +15,9 @@ Ffollowing.close()
 # open follower file, make a followers list
 FFollowers = NULL
 try:
-    Ffollowers = open (username + "/followers.list", "r")
+    Ffollowers = open ("data/followers.list", "r")
 except:
-    print ("Could not locate file: " + username + "/followers.list")
+    print ("Could not locate file: " + "data/followers.list")
     exit ()
 # Read data from file into a list
 followers = Ffollowers.readlines ()
@@ -47,9 +47,9 @@ for following in followings:
 # create unfollow file
 Funfollow = NULL
 try:
-    Funfollow = open (username + "/unfollow.list", "w")
+    Funfollow = open ("data/unfollow.list", "w")
 except:
-    print ("Could not locate file: " + username + "/unfollow.list")
+    print ("Could not locate file: " + "data/unfollow.list")
     exit ()
 
 # write unfollows list to unfollow file
