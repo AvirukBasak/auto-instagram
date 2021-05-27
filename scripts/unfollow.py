@@ -5,8 +5,8 @@ import selenium.common.exceptions
 import time
 
 # Login Credentials
-username = open ("user.txt", "r").readline ();
-password = open ("user.txt", "r").readline ();
+username = open ("credentials.txt", "r").readline ();
+password = open ("credentials.txt", "r").readline ();
 
 url = ""
 def path ():
