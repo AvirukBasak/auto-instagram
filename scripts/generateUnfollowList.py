@@ -47,9 +47,9 @@ for following in followings:
 # create unfollow file
 Funfollow = NULL
 try:
-    Funfollow = open ("data/unfollow.list", "w")
+    Funfollow = open ("data/namelist.txt", "w")
 except:
-    print ("Could not locate file: " + "data/unfollow.list")
+    print ("Could not locate file: " + "data/namelist.txt")
     exit ()
 
 # write unfollows list to unfollow file
