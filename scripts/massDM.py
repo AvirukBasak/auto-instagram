@@ -81,7 +81,7 @@ textfile.close ()
 # check for msg
 if msg[0:5] == "false":
     print ("ERROR: please overwrite content of data/dmtext.txt with\n
-            the message you wish to send.");
+                   the message you wish to send.");
     exit (1);
 
 textfile = NULL
